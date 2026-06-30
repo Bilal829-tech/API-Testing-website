@@ -4,6 +4,7 @@ import Header from './components/header'
 import Users from './pages/users'
 import SignUp from './pages/signUp'
 import Profile from './pages/profile' 
+import Home from './pages/home'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <main className="flex-1">
           <Routes>
+            <Route path="/" element={<Home />} /> 
             <Route path="/users" element={<Users />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/profile/:id" element={<Profile />} />
